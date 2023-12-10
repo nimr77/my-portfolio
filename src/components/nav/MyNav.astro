@@ -1,0 +1,17 @@
+---
+
+---
+
+<nav
+  class="fixed top-0 left-0 right-0 flex justify-evenly items-center h-11 bg-nav-color shadow-md
+     shadow-nav-glow rounded-b-2xl w-min text-white text-sm mx-24
+     px-10 py-2"
+>
+  {
+    ["Who Am I", "What I Do", "My Work", "Contact Me"].map((item, index) => (
+      <a href="#" class="mx-4 hover:text-nav-hover-color w-24">
+        {item}
+      </a>
+    ))
+  }
+</nav>
