@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Flutter",
+    "subtitle": "Flutter: From Beta to Beyond",
+    "description": "Born during the beta days, Flutter has become my trusted companion on a journey through the world of cross-platform development. Witnessing its evolution firsthand, I have become a champion of its power and versatility. Open-source projects across mobile and desktop platforms have been my proving ground, allowing me to explore its depths and contribute to its growth. Today, Flutter stands tall as my primary tool, empowering me to craft impactful applications that reach beyond the limitations of individual platforms.",
+    "image": "flutter.png",
+    "alt": "Senior Flutter Developer"
+  },
+  {
+    "title": "NodeJS",
+    "subtitle": "A Server-Side Stalwart",
+    "description": "A firm believer in the power of both worlds, I wield TypeScript and JavaScript to craft robust server-side applications and RESTful APIs. Since my computer science journey began, Node.js has been my trusted partner, enabling me to effortlessly reach and manage databases and handle server-side requests with unwavering efficiency. From the expressiveness of JavaScript to the rigorous structure of TypeScript, I leverage both sides of the spectrum to create elegant and functional solutions that delight myself and fellow enthusiasts alike.",
+    "image": "nodejs.svg",
+    "alt": "Senior NodeJS Developer"
+  },
+
+  {
+    "title": "Go",
+    "subtitle": "A Go Lang Odyssey: Simplicity and Scalability",
+    "description": "A recent arrival in my technological arsenal, GoLang has quickly carved its niche as a trusted ally for server-side development. Embraced in early 2023, it has proven itself invaluable in crafting large-scale projects like intricate ticketing systems and dynamic selling platforms.",
+    "image": "go.png",
+    "alt": "Senior Go Developer"
+  },
+  {
+    "title": "Gcloud",
+    "subtitle": "Navigating the Cloud with GCloud: A Toolkit for Growth",
+    "description": "From its nascent days, GCloud has held a special place in my development journey. I remember vividly, back then, the thrill of discovery as I ventured into its realm, transitioning from familiar AWS landscapes to explore uncharted territory. What began as playful experimentation soon blossomed into a deep appreciation for its vast and ever-evolving toolkit.",
+    "image": "gcloud.png",
+    "alt": "Senior GCloud Developer"
+  },
+  {
+    "title": "Web",
+    "subtitle": "A Web Odyssey: From HTML to Astro",
+    "description": "My web journey began with the raw language of HTML, crafting interactive experiences in the form of games. As my skills and ambitions grew, I explored a vast toolbox: Tailwind for rapid styling, Astro.js and React.js for dynamic applications, and Next.js for SEO-optimized websites.",
+    "image": "web.png",
+    "alt": "Senior Web Developer"
+  }
+]
