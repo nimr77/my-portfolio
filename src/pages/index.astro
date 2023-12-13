@@ -1,13 +1,16 @@
 ---
 import MyNav from "../components/nav/MyNav.astro";
 import AboutMe from "./aboutMe/index.astro";
+import WhatDoIDo from "./whatDoIDo/index.astro";
 ---
 
 <body class="bg-bg-1-color font-fontFamily text-white">
   <MyNav />
 
-  <div class="flex flex-col items-start mx-24 mt-44">
+  <div class="flex flex-col items-center mx-24 mt-44">
     <AboutMe />
-    <div class="w-full h-px bg-gray-700 my-8"></div>
+    <!-- <div class="w-full h-px bg-gray-700 my-8"></div> -->
+    <div class="p-24"></div>
+    <WhatDoIDo />
   </div>
 </body>
