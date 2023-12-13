@@ -10,14 +10,14 @@ export default function SkillCards() {
         <img
           src={`../../../../assets/images/${item.image}`}
           alt={item.title}
-          className={`w-full h-1/2 ${
+          className={`w-full h-44 ${
             fullScreen ? "object.cover" : "object-contain"
           }
           ${!fullScreen ? "p-4" : ""}
           `}
         />
-        <div className="w-full h-1/2 flex flex-col justify-center items-center p-5">
-          <h3>{item.title}</h3>
+        <div className="w-full  flex flex-col justify-center items-center px-4 pb-4 text-center pt-2">
+          <h3 className="text-lg font-bold">{item.title}</h3>
           <p>{item.subtitle}</p>
         </div>
       </div>
