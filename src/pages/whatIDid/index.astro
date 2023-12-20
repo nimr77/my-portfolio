@@ -1,0 +1,21 @@
+---
+import jsonText from "../../../assets/bridgs.json";
+import ProjectCards from "./components/ProjectCard.tsx";
+
+const title = jsonText.title;
+---
+
+<dev class="flex flex-col justify-center items-center w-full h-full">
+  <h3 class="text-center text-2xl font-bold align-middle mb-10">
+    {title}
+  </h3>
+  <img
+    src="../../../assets/images/glow01.png"
+    class="pointer-events-none absolute h-full w-full"
+  />
+  <div
+    class="flex flex-wrap justify-center items-center w-full h-full relative z-10"
+  >
+    <ProjectCards client:load />
+  </div>
+</dev>

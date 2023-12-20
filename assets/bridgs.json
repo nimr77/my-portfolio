@@ -1,0 +1,75 @@
+{
+  "title": "Building Bridges Between Ideas and Impact",
+  "projects": [
+    {
+      "name": "eSimply",
+      "image": "esimply.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://esimply.com/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "Ticket",
+      "image": "ticket.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "Optovision",
+      "image": "optovision.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "Laundry Service",
+      "image": "laundry.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "Maroc24",
+      "image": "maroc24.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "Les Empires",
+      "image": "lesEmpires.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "My Essaouira",
+      "image": "myEssouira.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "Colopig",
+      "image": "colopig.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "StreetUp",
+      "image": "streetup.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
+      "name": "Solyarena",
+      "image": "solyarena.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://ticket.ma/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    }
+  ]
+}
