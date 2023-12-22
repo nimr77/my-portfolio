@@ -1,0 +1,18 @@
+---
+import ContactMeBox from "./components/ContactMeBox";
+---
+
+<dev class="flex flex-col justify-center items-center w-full h-full">
+  <h3 class="text-center text-2xl font-bold align-middle mb-4">
+    We made the tools and the tools made us.
+  </h3>
+  <img
+    src="../../../assets/images/glow01.png"
+    class="pointer-events-none absolute w-full mr-40"
+  />
+  <div
+    class="flex flex-wrap justify-center items-center w-full h-full relative z-10"
+  >
+    <ContactMeBox client:load />
+  </div>
+</dev>
