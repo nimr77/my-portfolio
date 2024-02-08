@@ -15,30 +15,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out your repository using git
-        uses: actions/checkout@v2
-
-      - name: Build Astro with Bun
-        run:
-          bunx --bun astro build
-          # Ex: bun build (for most recent Bun versions)
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./dist # Assuming the build output is in the `dist` directory
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+      - name: Install, build, and upload your site
+        uses: withastro/action@v1
+        # with:
+        # path: . # The root location of your Astro project inside the repository. (optional)
+        # node-version: 18 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
+        # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        with:
-          content-path: ./dist # Same as the uploaded artifact path
-          force-orphan: true # Ensure a clean deployment
-
