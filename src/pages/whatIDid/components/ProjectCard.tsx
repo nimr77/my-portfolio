@@ -40,9 +40,10 @@ export default function ProjectCards() {
             <button className="focus:outline-none m-4 w-48 flex flex-col  justify-center  items-center object-center ">
               <div className=" w-32 h-32 rounded-3xl overflow-hidden bg-black/20 backdrop-blur-sm shadow-md ">
                 <img
-                  src={`../../../../assets/images/projects/${item.image}`}
+                  src={`images/projects/${item.image}`}
                   alt={item.name}
                   className={`w-full h-full object-cover`}
+                  key={item.name}
                 />
                 {/* <div className="w-full  flex flex-col justify-center items-center px-4 pb-4 text-center pt-2">
                   <h3 className="text-lg font-bold">{item.name}</h3>
