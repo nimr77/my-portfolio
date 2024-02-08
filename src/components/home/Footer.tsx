@@ -11,8 +11,8 @@ export default function Footer() {
       <div className="flex flex-row justify-end  mt-5">
         {json.map((item) => {
           const icon = {
-            github: <AiFillGithub class="w-6 h-6" />,
-            linkedin: <AiFillLinkedin class="w-6 h-6" />,
+            github: <AiFillGithub className="w-6 h-6" />,
+            linkedin: <AiFillLinkedin className="w-6 h-6" />,
           }[item.icon];
 
           const title = item.title;
