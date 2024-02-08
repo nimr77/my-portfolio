@@ -1,51 +1,43 @@
-name: Deploy Astro to GitHub Pages
+name: Deploy Astro to GitHub Pages with Bun
 
-    on:
-     # Trigger the workflow every time you push to the `main` branch
-      push:
-        branches: [ main ]
-      # Allows you to run this workflow manually from the Actions tab on GitHub.
-      workflow_dispatch:
+on:
+  # Trigger the workflow on push to the `main` branch or manual execution
+  push:
+    branches: [main]
+  workflow_dispatch:
 
-      # Allow this job to clone the repo and create a page deployment
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Check out your repository using git
-          uses: actions/checkout@v2
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out your repository using git
+        uses: actions/checkout@v2
 
-        - name: Use Node.js 16
-          uses: actions/setup-node@v2
-          with:
-            node-version: '16'
-            cache: 'npm'
+      - name: Build Astro with Bun
+        run:# Customize this step based on your Bun version and build command
+          # Ex: bun build (for most recent Bun versions)
 
-        # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
-        - name: Install dependencies
-          run: npm ci
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist # Assuming the build output is in the `dist` directory
 
-        # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
-        - name: Build Astro
-          run: npm run build --if-present
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+        with:
+          content-path: ./dist # Same as the uploaded artifact path
+          force-orphan: true # Ensure a clean deployment
 
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v1
-          with:
-            path: ./dist
-
-      deploy:
-        environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-        runs-on: ubuntu-latest
-        needs: build
-        steps:
-          - name: Deploy to GitHub Pages
-            id: deployment
-            uses: actions/deploy-pages@v1
