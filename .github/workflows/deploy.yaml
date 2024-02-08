@@ -19,7 +19,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Astro with Bun
-        run:# Customize this step based on your Bun version and build command
+        run:
+          bunx --bun astro build
           # Ex: bun build (for most recent Bun versions)
 
       - name: Upload artifact
