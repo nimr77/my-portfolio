@@ -2,6 +2,13 @@
   "title": "Building Bridges Between Ideas and Impact",
   "projects": [
     {
+      "name": "Prestigia",
+      "image": "prestigia.png",
+      "colorHex": "#f5f5f5",
+      "projectLink": "https://www.prestigia.com/en/",
+      "shortDescription": "eSimply is a platform that connects people with the best local professionals for every project on their to-do list."
+    },
+    {
       "name": "eSimply",
       "image": "eSimply.png",
       "colorHex": "#f5f5f5",
